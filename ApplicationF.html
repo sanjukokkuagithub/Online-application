@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>Online application form:</title>
+<style>
+body{
+ background-color:lightblue;
+ font-family:mono space;
+ margin:10px;
+ padding:20px 20px;
+}
+h1{
+ text-align:center;
+font-family:mono space;
+}
+h2{
+background-color:violet;
+text-align:center;
+}
+table{
+ width:100%;
+}
+td{
+ padding:10px;
+}
+input{
+ height:30px;
+ border:1px solid black;
+border-radius:20px;
+}
+input:focus{
+ outline:none;
+ border:1px solid blue;
+}
+textarea{
+outline:none;
+border:1px solid black;
+border-radius:5px;
+}
+textarea:focus{
+outline:none;
+border:1px solid blue;
+}
+.button{
+background-color:violet;
+font-size:15px;
+padding:2px 10px;
+margin:10px;
+}
+</style>
+</head>
+<body>
+<h1>Online application form</h1>
+<form>
+<div>
+<h2>Personal Information:</h2>
+<table>
+<tr>
+<td>First Name:</td>
+<td><input type="text"size="20"></td>
+<td>Middle Name:</td>
+<td><input type="text"size="20"></td>
+<td>Last Name:</td>
+<td><input type="text"size="20"></td>
+</tr>
+<tr>
+<td>Father's Name:</td>
+<td><input type="text"size="20"></td>
+<td>Mother's Name:</td>
+<td><input type="text"size="20"></td>
+<td>Sibling's Name:</td>
+<td><input type="text"size="20"></td>
+</tr>
+<tr>
+<td>Address:</td>
+<td><textarea rows="6"cols="10"></textarea>
+<td>Home Phone:</td>
+<td><input type="text" size="20"></td>
+<td>Mobile Phone:</td>
+<td><input type="text" size="20"></td>
+</tr>
+<tr>
+<td>Date Of Birth:</td>
+<td><input type="date">
+</td>
+<td> Birth Of Place:</td>
+<td><input type="text" size="20">
+</td>
+</tr>
+<tr>
+<td colspan="1">
+Select gender:
+</td>
+<td>
+<input type="radio"name="gender"value="male">Male
+</td>
+<td>
+<input type="radio"name="gender"value="female">Female
+</td>
+</tr>
+<tr>
+<td>Highest Qualification:</td>
+<td><input type="text"size="20"></td>
+<td>Year of passing:</td>
+<td><input type="year"></td>
+</tr>
+<tr>
+<td>Languages Known:</td>
+<td><input  type="radio"name="language"value="Telugu"</td>Telugu
+<td><input type="radio"name="language"value="English"</td>English
+<td><input type="radio"name="language"value="Hindi"</td>Hindi
+</tr>
+<tr>
+<td>Hobbies:</td>
+<td><input type="checkbox"value="Playing"</td>Playing
+<td><input type="checkbox"value="Writing"</td>Writing
+<td><input type="checkbox"value="Coding"</td>Coding
+</tr>
+<tr>
+<td>
+<label>Nationality:</label>
+</td>
+<td>
+<select>
+<option>Indian</option>
+<option>American</option>
+<option>Other</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>About Yourself:</td>
+<td colspan="3"><textarea cols="40" rows="8"></textarea></td>
+</tr>
+<tr>
+<td>AadharCard Number:</td>
+<td><input type="number"></td>
+<td>PAN CARD Number:</td>
+<td><input type="number"></td>
+</tr>
+</table>
+</div>
+<div>
+<h2>Educational Details:</h2>
+<table>
+<tr><td>S.NO</td>
+<td>Qualification</td>
+<td>Institute/University</td>
+<td>Year of Passing</td>
+<td>Percentage(%)</td>
+</tr>
+<tr>
+<td>1</td>
+<td><input type="text" size="20"></td>
+<td><input type="text" size="20"></td>
+<td><input type="month"></td>
+<td><input type="number"min="0"max="100"></td>
+</tr>
+<tr>
+<td>2</td>
+<td><input type="text" size="20"></td>
+<td><input type="text" size="20"></td>
+<td><input type="month"></td>
+<td><input type="number"min="0"max="100"></td>
+</tr>
+<tr>
+<td>3</td>
+<td><input type="text" size="20"></td>
+<td><input type="text" size="20"></td>
+<td><input type="month"></td>
+<td><input type="number"min="0"max="100"size="20"></td>
+</tr>
+</table>
+</div>
+<div>
+<h2>Work Experience:</h2>
+<table>
+<tr>
+<td>S.no</td>
+<td>Company Name</td>
+<td>Company Address</td>
+<td>Roles</td>
+<td>Duration</td>
+</tr>
+<tr>
+<td>1</td>
+<td><input type="text"size="20"></td>
+<td><textarea rows="5"cols="30"></textarea></td>
+<td><textarea rows="5"cols="30"></textarea></td>
+<td><input type="month"></td>
+</tr>
+<tr>
+<td>2</td>
+<td><input type="text"size="20"></td>
+<td><textarea rows="5"cols="30"></textarea></td>
+<td><textarea rows="5"cols="30"></textarea></td>
+<td><input type="month"></td>
+</tr>
+<tr>
+<td>3</td>
+<td><input type="text"size="20"></td>
+<td><textarea rows="4"cols="30"></textarea></td>
+<td><textarea rows="4"cols="30"></textarea></td>
+<td><input type="month"></td>
+</tr>
+</table>
+</div>
+<div>
+<h2>Other Details:</h2>
+<table>
+<tr colspan="1"><td>Job Type:</td>
+<td><input type="radio"value="permanent">Permanent</td>
+<td><input type="radio"value="temparory">Temparory</td>
+<td><input type="radio"value="other">Other</td>
+</tr>
+<tr>
+<td>Date Of Joining:</td>
+<td><input type="date"></td>
+</tr>
+<tr>
+<td>Job Location:</td>
+<td><input type="radio"value="kammam">Kammam</td>
+<td><input type="radio"value="hyderabad">Hyderabad</td>
+<td><input type="radio"value="vizak">Vizak</td>
+</tr>
+<tr>
+<td>Are you available at hyderabad?</td>
+<td><input type="radio"value="yes">Yes</td>
+<td><input type="radio"value="no">No</td>
+</tr>
+<tr>
+<td><input type="Checkbox">
+<td colspan="4">This is inform that, All the above mentioned information is correct as per my knowlede.</td>
+</tr>
+<tr>
+<td><input type="submit"value="Submit"class="button">
+</td>
+<td><input type="reset"value="Reset"class="button">
+</td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
